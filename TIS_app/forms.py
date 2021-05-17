@@ -1,7 +1,9 @@
+from location_field.forms.plain import PlainLocationField
+
 from django import forms
 from django.contrib.auth import get_user_model
 
-# from TIS_app.models import CustomUser
+from TIS_app.models import Inventory
 from TIS_app.validators import validate_password
 
 
@@ -57,3 +59,13 @@ class RegisterForm(forms.ModelForm):
         if commit:
             user.save()
         return user
+
+
+class InventoryForm(forms.ModelForm):
+    city = forms.CharField()
+    location = PlainLocationField(based_fields=['city'])
+
+    class Meta:
+        model = Inventory
+        fields = ("name", "location", "author", "principal",
+                  "principal_address", "comments", )

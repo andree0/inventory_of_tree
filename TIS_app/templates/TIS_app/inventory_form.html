@@ -1,0 +1,9 @@
+{% extends 'TIS_app/base.html' %}
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/jquery.geo/dist/jquery.geo.min.js"></script>
+{% block body %}
+    <form action="" method="POST">{% csrf_token %}
+        {{ form }}
+    <input type="submit" value="Start Inventory">
+    </form>
+{% endblock %}

@@ -42,14 +42,15 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'rest_framework',
     'django_extensions',
     # 'django.contrib.sites',
     # 'allauth',
     # 'allauth.account',
     # 'allauth.socialaccount.providers.facebook',
 
+    'rest_framework',
     'TIS_app',
+    'location_field.apps.DefaultConfig',
 ]
 
 REST_FRAMEWORK = {
@@ -58,6 +59,10 @@ REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES': [
         'rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly'
     ]
+}
+
+LOCATION_FIELD = {
+    'provider.openstreetmap.max_zoom': 18,
 }
 
 # AUTHENTICATION_BACKENDS = (

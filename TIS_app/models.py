@@ -1,3 +1,5 @@
+from location_field.models.plain import PlainLocationField
+
 from django.contrib.auth.models import User
 from django.core.validators import MaxValueValidator, MinValueValidator
 from django.db import models
@@ -17,7 +19,7 @@ class Species(models.Model):
 
 class Inventory(models.Model):
     name = models.CharField(max_length=64)
-    location = models.CharField(max_length=128)
+    location = PlainLocationField()
     created = models.DateField(auto_now_add=True)
     author = models.ForeignKey(User, on_delete=models.PROTECT)
     principal = models.CharField(max_length=64)
@@ -29,10 +31,7 @@ class Inventory(models.Model):
         blank=True)
 
     def __str__(self):
-        return f"""ID: {self.pk},
-        nazwa: {self.name},
-        lokalizacja: {self.localisation},
-        utworzono: {self.created}"""
+        return f"""{self.pk}/{self.name}"""
 
 
 class Circuit(models.Model):

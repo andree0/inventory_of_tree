@@ -5,7 +5,7 @@ from django.views.generic import CreateView, ListView
 from django.views.generic.base import View
 from rest_framework import generics, viewsets
 
-from TIS_app.forms import RegisterForm
+from TIS_app.forms import InventoryForm, RegisterForm
 from TIS_app.models import (
     Circuit,
     Comment,
@@ -61,4 +61,5 @@ class AllInventoryView(ListView):
 
 
 class CreateNewInventoryView(CreateView):
-    pass
+    model = Inventory
+    form_class = InventoryForm
