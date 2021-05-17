@@ -19,7 +19,8 @@ class Species(models.Model):
 
 class Inventory(models.Model):
     name = models.CharField(max_length=64)
-    location = PlainLocationField()
+    city = models.CharField(max_length=255, blank=True, null=True)
+    location = PlainLocationField(based_fields=['city'], zoom=7)
     created = models.DateField(auto_now_add=True)
     author = models.ForeignKey(User, on_delete=models.PROTECT)
     principal = models.CharField(max_length=64)

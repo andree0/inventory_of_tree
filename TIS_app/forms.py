@@ -63,7 +63,8 @@ class RegisterForm(forms.ModelForm):
 
 class InventoryForm(forms.ModelForm):
     city = forms.CharField()
-    location = PlainLocationField(based_fields=['city'])
+    location = PlainLocationField(based_fields=['city'],
+                                  initial='52.23318272394228,21.005859375')
 
     class Meta:
         model = Inventory

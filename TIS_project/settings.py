@@ -62,6 +62,8 @@ REST_FRAMEWORK = {
 }
 
 LOCATION_FIELD = {
+    'map.provider': 'openstreetmap',
+    'search.provider': 'nominatim',
     'provider.openstreetmap.max_zoom': 18,
 }
 
