@@ -23,7 +23,8 @@ from TIS_app import views as v
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('accounts/', include('django.contrib.auth.urls')),
-    path('', v.IndexView.as_view(), name="index")
+    path('', v.IndexView.as_view(), name="index"),
+    path('register/', v.RegisterView.as_view(), name="register")
     # path('accounts/', include('allauth.urls')),
 ]
 
