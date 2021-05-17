@@ -24,7 +24,11 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('accounts/', include('django.contrib.auth.urls')),
     path('', v.IndexView.as_view(), name="index"),
-    path('register/', v.RegisterView.as_view(), name="register")
+    path('register/', v.RegisterView.as_view(), name="register"),
+    path('inventory/create/', v.CreateNewInventory.as_view(),
+         name="create_inventory"),
+    path('inventory/all/', v.AllInventory.as_view(),
+         name="all_inventory"),
     # path('accounts/', include('allauth.urls')),
 ]
 

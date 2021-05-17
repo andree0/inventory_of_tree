@@ -52,6 +52,16 @@
             </h5>
         {% endif %}
     </div>
+    <ul class="nav">
+    <li class="nav-item">
+        <a class="nav-link" href="{% url 'all_inventory' %}">
+            All Inventory</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="{% url 'create_inventory' %}">
+            Create New Inventory</a>
+    </li>
+    </ul>
 {% block body %}
 {% endblock %}
 </body>

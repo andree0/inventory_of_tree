@@ -163,7 +163,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, './static/')
 
 MEDIA_URL = './images/'
 
-LOGIN_URL = '/login/'
+LOGIN_URL = '/accounts/login/'
 
 # try:
 #     from TIS_project.local_settings import DATABASES
