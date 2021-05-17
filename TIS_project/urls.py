@@ -1,4 +1,4 @@
-"""inventory_of_trees URL Configuration
+"""TIS_project URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/3.1/topics/http/urls/
@@ -18,10 +18,13 @@ from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import include, path
 
+from TIS_app import views as v
+
 urlpatterns = [
     path('admin/', admin.site.urls),
-    # path('accounts/', include('django.contrib.auth.urls')),
-    path('accounts/', include('allauth.urls')),
+    path('accounts/', include('django.contrib.auth.urls')),
+    path('', v.IndexView.as_view(), name="index")
+    # path('accounts/', include('allauth.urls')),
 ]
 
 if settings.DEBUG:

@@ -128,5 +128,5 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
-inventory_of_trees/
+TIS_project/
 .local_settings.py

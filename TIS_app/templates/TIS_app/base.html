@@ -7,6 +7,28 @@
     <title>Trees</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+{#    <script>#}
+{#      window.fbAsyncInit = function() {#}
+{#        FB.init({#}
+{#          appId      : '957710534991428',#}
+{#          cookie     : true,#}
+{#          xfbml      : true,#}
+{#          version    : '10.0'#}
+{#        });#}
+{##}
+{#        FB.AppEvents.logPageView();#}
+{##}
+{#      };#}
+{##}
+{#      (function(d, s, id){#}
+{#         var js, fjs = d.getElementsByTagName(s)[0];#}
+{#         if (d.getElementById(id)) {return;}#}
+{#         js = d.createElement(s); js.id = id;#}
+{#         js.src = "https://connect.facebook.net/en_US/sdk.js";#}
+{#         fjs.parentNode.insertBefore(js, fjs);#}
+{#       }(document, 'script', 'facebook-jssdk'));#}
+{#    </script>#}
 </head>
 <body>
     <h1><a href="" class="text-decoration-none text-body">
@@ -20,9 +42,9 @@
             Not signed in.
             <a class="d-inline btn btn-outline-primary btn-sm" role="button"
                href="{% url 'login' %}">Log In</a>
-            {% load socialaccount %}
-            {% providers_media_js %}
-            <a href="{% provider_login_url "facebook" method="js_sdk" %}">Facebook Connect</a>
+{#            {% load socialaccount %}#}
+{#            {% providers_media_js %}#}
+{#            <a href="{% provider_login_url "facebook" method="js_sdk" %}">Facebook Connect</a>#}
             <a class="d-inline btn btn-primary btn-sm" role="button"
                href="{% url 'register' %}">Register</a>
             <h5 class="text-center text-monospace text-danger" id="welcome">
