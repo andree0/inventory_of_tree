@@ -25,11 +25,16 @@ urlpatterns = [
     path('accounts/', include('django.contrib.auth.urls')),
     path('', v.IndexView.as_view(), name="index"),
     path('register/', v.RegisterView.as_view(), name="register"),
-    path('inventory/create/', v.CreateNewInventory.as_view(),
+    path('inventory/create/', v.CreateNewInventoryView.as_view(),
          name="create_inventory"),
-    path('inventory/all/', v.AllInventory.as_view(),
+    path('inventory/all/', v.AllInventoryView.as_view(),
          name="all_inventory"),
     # path('accounts/', include('allauth.urls')),
+
+    path('api-auth/',
+         include('rest_framework.urls', namespace='rest_framework')),
+    path('api/inventory/all/', v.AllInventoryAPIView.as_view(),
+         name='api_inventory_all'),
 ]
 
 if settings.DEBUG:

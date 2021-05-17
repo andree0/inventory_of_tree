@@ -17,8 +17,8 @@ class Species(models.Model):
 
 class Inventory(models.Model):
     name = models.CharField(max_length=64)
-    localisation = models.CharField(max_length=128)
-    created = models.DateField(auto_created=True)
+    location = models.CharField(max_length=128)
+    created = models.DateField(auto_now_add=True)
     author = models.ForeignKey(User, on_delete=models.PROTECT)
     principal = models.CharField(max_length=64)
     principal_address = models.CharField(max_length=128, null=True, blank=True)

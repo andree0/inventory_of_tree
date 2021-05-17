@@ -3,9 +3,27 @@ from django.shortcuts import render, redirect
 from django.urls import reverse_lazy
 from django.views.generic import CreateView, ListView
 from django.views.generic.base import View
+from rest_framework import generics, viewsets
 
 from TIS_app.forms import RegisterForm
-# from TIS_app.models import CustomUser
+from TIS_app.models import (
+    Circuit,
+    Comment,
+    Inventory,
+    Photo,
+    Species,
+    Tree,
+    User,
+)
+from TIS_app.serializers import (
+    InventorySerializer,
+    UserSerializer,
+)
+
+
+class UserViewSet(viewsets.ModelViewSet):
+    queryset = User.objects.all()
+    serializer_class = UserSerializer
 
 
 class IndexView(View):
@@ -33,9 +51,14 @@ class RegisterView(CreateView):
         return redirect(self.get_success_url())
 
 
-class AllInventory(ListView):
-    pass
+class AllInventoryAPIView(generics.ListCreateAPIView):
+    queryset = Inventory.objects.all()
+    serializer_class = InventorySerializer
 
 
-class CreateNewInventory(CreateView):
+class AllInventoryView(ListView):
+    model = Inventory
+
+
+class CreateNewInventoryView(CreateView):
     pass
