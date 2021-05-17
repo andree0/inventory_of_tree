@@ -1,4 +1,5 @@
 from django.db import models
+from django.contrib.auth.models import User
 from django.core.validators import MaxValueValidator, MinValueValidator
 
 
@@ -20,16 +21,27 @@ class Species(models.Model):
 class Inventory(models.Model):
     name = models.CharField(max_length=64)
     localisation = models.CharField(max_length=128)
-    term = models.DateField()
-    employer = models.CharField(max_length=64)
-    employer_address = models.CharField(max_length=128, null=True, blank=True)
-    comments = models.ForeignKey(Comment, on_delete=models.SET_NULL, null=True, blank=True)
+    created = models.DateField(auto_created=True)
+    author = models.ForeignKey(User, on_delete=models.PROTECT)
+    principal = models.CharField(max_length=64)
+    principal_address = models.CharField(max_length=128, null=True, blank=True)
+    comments = models.ForeignKey(
+        Comment,
+        on_delete=models.SET_NULL,
+        null=True,
+        blank=True)
 
     def __str__(self):
         return f"""ID: {self.pk},
         nazwa: {self.name},
         lokalizacja: {self.localisation},
-        termin: {self.term}"""
+        utworzono: {self.created}"""
+
+
+class Circuit(models.Model):
+    value = models.PositiveIntegerField(validators=[
+        MinValueValidator(1),
+        MaxValueValidator(600)])
 
 
 class Tree(models.Model):
@@ -42,8 +54,12 @@ class Tree(models.Model):
     )
     identification_number = models.PositiveIntegerField()
     species = models.ForeignKey(Species, on_delete=models.CASCADE)
-    circuit = models.PositiveIntegerField(validators=[MinValueValidator(1), MaxValueValidator(500)])
-    roloff = models.PositiveIntegerField(choices=ROLOFF_CHOICES)
+    circuit = models.ForeignKey(Circuit, on_delete=models.PROTECT)
+    height = models.PositiveIntegerField()
+    crown_width = models.PositiveIntegerField()
+    roloff = models.PositiveIntegerField(
+        choices=ROLOFF_CHOICES,
+        default=ROLOFF_CHOICES[0])
     hollow = models.BooleanField(default=False)
     inventory = models.ForeignKey(Inventory, on_delete=models.CASCADE)
 
@@ -55,5 +71,5 @@ class Tree(models.Model):
 
 
 class Photo(models.Model):
-    image = models.ImageField()
+    image = models.ImageField(upload_to='images/', blank=True, null=True)
     tree = models.ForeignKey(Tree, on_delete=models.CASCADE)
