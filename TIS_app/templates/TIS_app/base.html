@@ -15,34 +15,8 @@
       crossorigin=""></script>
     <script src="{% static 'node_modules/jquery/dist/jquery.min.js' %}"></script>
     <script src="{% static 'node_modules/jquery.geo/dist/jquery.geo.min.js' %}"></script>
-    <script>
-      $(function() {
-        $( "#map" ).geomap( );
-      });
-    </script>
-
    {{form.media}}
-{#    <script>#}
-{#      window.fbAsyncInit = function() {#}
-{#        FB.init({#}
-{#          appId      : '957710534991428',#}
-{#          cookie     : true,#}
-{#          xfbml      : true,#}
-{#          version    : '10.0'#}
-{#        });#}
-{##}
-{#        FB.AppEvents.logPageView();#}
-{##}
-{#      };#}
-{##}
-{#      (function(d, s, id){#}
-{#         var js, fjs = d.getElementsByTagName(s)[0];#}
-{#         if (d.getElementById(id)) {return;}#}
-{#         js = d.createElement(s); js.id = id;#}
-{#         js.src = "https://connect.facebook.net/en_US/sdk.js";#}
-{#         fjs.parentNode.insertBefore(js, fjs);#}
-{#       }(document, 'script', 'facebook-jssdk'));#}
-{#    </script>#}
+
 </head>
 <body>
     <h1><a href="{% url "index" %}" class="text-decoration-none text-body">
@@ -56,9 +30,6 @@
             Not signed in.
             <a class="d-inline btn btn-outline-primary btn-sm" role="button"
                href="{% url 'login' %}">Log In</a>
-{#            {% load socialaccount %}#}
-{#            {% providers_media_js %}#}
-{#            <a href="{% provider_login_url "facebook" method="js_sdk" %}">Facebook Connect</a>#}
             <a class="d-inline btn btn-primary btn-sm" role="button"
                href="{% url 'register' %}">Register</a>
             <h5 class="text-center text-monospace text-danger" id="welcome">

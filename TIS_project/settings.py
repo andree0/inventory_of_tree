@@ -43,10 +43,6 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django_extensions',
-    # 'django.contrib.sites',
-    # 'allauth',
-    # 'allauth.account',
-    # 'allauth.socialaccount.providers.facebook',
 
     'rest_framework',
     'TIS_app',
@@ -67,36 +63,6 @@ LOCATION_FIELD = {
     'provider.openstreetmap.max_zoom': 18,
 }
 
-# AUTHENTICATION_BACKENDS = (
-#     'django.contrib.auth.backends.ModelBackend',
-#     'allauth.account.auth_backends.AuthenticationBackend',
-# )
-#
-# SITE_ID = 1
-#
-# SOCIALACCOUNT_PROVIDERS = {
-#     'facebook': {
-#         'METHOD': 'oauth2',
-#         'SDK_URL': '//connect.facebook.net/{locale}/sdk.js',
-#         'SCOPE': ['email', 'public_profile'],
-#         'AUTH_PARAMS': {'auth_type': 'reauthenticate'},
-#         'INIT_PARAMS': {'cookie': True},
-#         'FIELDS': [
-#             'id',
-#             'first_name',
-#             'last_name',
-#             'middle_name',
-#             'name',
-#             'name_format',
-#             'picture',
-#             'short_name'
-#         ],
-#         'EXCHANGE_TOKEN': True,
-#         'LOCALE_FUNC': 'path.to.callable',
-#         'VERIFIED_EMAIL': False,
-#         'VERSION': 'v7.0',
-#     }
-# }
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

@@ -1,4 +1,5 @@
 from django.contrib.auth import authenticate, get_user_model, login
+from django.contrib.auth.mixins import LoginRequiredMixin
 from django.shortcuts import render, redirect
 from django.urls import reverse_lazy
 from django.views.generic import CreateView, ListView
@@ -60,6 +61,6 @@ class AllInventoryView(ListView):
     model = Inventory
 
 
-class CreateNewInventoryView(CreateView):
+class CreateNewInventoryView(LoginRequiredMixin, CreateView):
     model = Inventory
     form_class = InventoryForm
