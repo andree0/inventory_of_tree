@@ -13,8 +13,8 @@
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
       integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
       crossorigin=""></script>
-    <script src="node_modules/jquery/dist/jquery.min.js" defer></script>
-    <script src="node_modules/jquery.geo/dist/jquery.geo.min.js" defer></script>
+    <script src="{% static 'node_modules/jquery/dist/jquery.min.js' %}"></script>
+    <script src="{% static 'node_modules/jquery.geo/dist/jquery.geo.min.js' %}"></script>
     <script>
       $(function() {
         $( "#map" ).geomap( );
