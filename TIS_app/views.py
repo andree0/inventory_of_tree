@@ -5,6 +5,7 @@ from django.urls import reverse_lazy
 from django.views.generic import CreateView, ListView
 from django.views.generic.base import View
 from rest_framework import generics, viewsets
+from TIS_app.permissions import IsOwnerOrReadOnly
 
 from TIS_app.forms import InventoryForm, RegisterForm
 from TIS_app.models import (
@@ -22,10 +23,20 @@ from TIS_app.serializers import (
 )
 
 
+# API views --------------------------------------------
+
 class UserViewSet(viewsets.ModelViewSet):
     queryset = User.objects.all()
     serializer_class = UserSerializer
+    permission_classes = [IsOwnerOrReadOnly]
 
+
+class AllInventoryAPIView(generics.ListAPIView):
+    queryset = Inventory.objects.all()
+    serializer_class = InventorySerializer
+
+
+# App views ---------------------------------------------
 
 class IndexView(View):
     template_name = 'TIS_app/base.html'
@@ -52,11 +63,6 @@ class RegisterView(CreateView):
         return redirect(self.get_success_url())
 
 
-class AllInventoryAPIView(generics.ListCreateAPIView):
-    queryset = Inventory.objects.all()
-    serializer_class = InventorySerializer
-
-
 class AllInventoryView(ListView):
     model = Inventory
 
@@ -64,3 +70,4 @@ class AllInventoryView(ListView):
 class CreateNewInventoryView(LoginRequiredMixin, CreateView):
     model = Inventory
     form_class = InventoryForm
+    success_url = reverse_lazy('index')

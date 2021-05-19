@@ -62,7 +62,7 @@ class RegisterForm(forms.ModelForm):
 
 
 class InventoryForm(forms.ModelForm):
-    city = forms.CharField()
+    city = forms.CharField(label="Search location", required=False)
     location = PlainLocationField(based_fields=['city'],
                                   initial='52.23,21.00')
 

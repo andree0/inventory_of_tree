@@ -13,6 +13,8 @@ from TIS_app.models import (
 
 
 class UserSerializer(serializers.HyperlinkedModelSerializer):
+    url = serializers.HyperlinkedIdentityField(view_name="TIS_app:user-detail")
+
     class Meta:
         model = User
         fields = ['url', 'username', 'email', 'is_staff']

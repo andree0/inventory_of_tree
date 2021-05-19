@@ -20,6 +20,7 @@ from django.contrib import admin
 from django.urls import include, path
 
 from TIS_app import views as v
+from TIS_app import routers as r
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -34,6 +35,7 @@ urlpatterns = [
 
     path('api-auth/',
          include('rest_framework.urls', namespace='rest_framework')),
+    path('api/', include((r.router.urls, 'TIS_app'))),
     path('api/inventory/all/', v.AllInventoryAPIView.as_view(),
          name='api_inventory_all'),
 ]
