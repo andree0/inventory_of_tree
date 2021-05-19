@@ -36,6 +36,12 @@ class AllInventoryAPIView(generics.ListAPIView):
     serializer_class = InventorySerializer
 
 
+class DetailsInventoryAPIView(generics.RetrieveUpdateDestroyAPIView):
+    queryset = Inventory.objects.all()
+    serializer_class = InventorySerializer
+    permission_classes = [IsOwnerOrReadOnly]
+
+
 # App views ---------------------------------------------
 
 class IndexView(View):

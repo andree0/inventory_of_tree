@@ -34,10 +34,12 @@ urlpatterns = [
     # path('accounts/', include('allauth.urls')),
 
     path('api-auth/',
-         include('rest_framework.urls', namespace='rest_framework')),
+         include('rest_framework.urls', namespace="rest_framework")),
     path('api/', include((r.router.urls, 'TIS_app'))),
     path('api/inventory/all/', v.AllInventoryAPIView.as_view(),
-         name='api_inventory_all'),
+         name="api_inventory_all"),
+    path('api/inventory/<int:pk>/details/', v.DetailsInventoryAPIView.as_view(),
+         name="api_inventory_details"),
 ]
 
 if settings.DEBUG:

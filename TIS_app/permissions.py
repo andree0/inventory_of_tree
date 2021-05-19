@@ -16,5 +16,10 @@ class IsOwnerOrReadOnly(permissions.BasePermission):
         except AttributeError:
             pass
 
+        try:
+            return obj.author == request.user
+        except AttributeError:
+            pass
+
         # Write permissions are only allowed to the owner of the snippet.
         return obj == request.user
