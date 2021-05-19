@@ -2,7 +2,7 @@ from django.contrib.auth import authenticate, get_user_model, login
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.shortcuts import render, redirect
 from django.urls import reverse_lazy
-from django.views.generic import CreateView, ListView
+from django.views.generic import CreateView, DetailView, ListView
 from django.views.generic.base import View
 from rest_framework import generics, viewsets
 from TIS_app.permissions import IsOwnerOrReadOnly
@@ -36,7 +36,7 @@ class AllInventoryAPIView(generics.ListAPIView):
     serializer_class = InventorySerializer
 
 
-class DetailsInventoryAPIView(generics.RetrieveUpdateDestroyAPIView):
+class DetailInventoryAPIView(generics.RetrieveUpdateDestroyAPIView):
     queryset = Inventory.objects.all()
     serializer_class = InventorySerializer
     permission_classes = [IsOwnerOrReadOnly]
@@ -77,3 +77,9 @@ class CreateNewInventoryView(LoginRequiredMixin, CreateView):
     model = Inventory
     form_class = InventoryForm
     success_url = reverse_lazy('index')
+
+
+class DetailInventoryView(DetailView):
+    model = Inventory
+
+

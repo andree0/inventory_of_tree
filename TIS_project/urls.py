@@ -31,6 +31,8 @@ urlpatterns = [
          name="create_inventory"),
     path('inventory/all/', v.AllInventoryView.as_view(),
          name="all_inventory"),
+    path('inventory/<int:pk>/detail/', v.DetailInventoryView.as_view(),
+         name="inventory_detail"),
     # path('accounts/', include('allauth.urls')),
 
     path('api-auth/',
@@ -38,7 +40,7 @@ urlpatterns = [
     path('api/', include((r.router.urls, 'TIS_app'))),
     path('api/inventory/all/', v.AllInventoryAPIView.as_view(),
          name="api_inventory_all"),
-    path('api/inventory/<int:pk>/details/', v.DetailsInventoryAPIView.as_view(),
+    path('api/inventory/<int:pk>/detail/', v.DetailInventoryAPIView.as_view(),
          name="api_inventory_details"),
 ]
 
