@@ -1,13 +1,13 @@
 from django.contrib.auth import authenticate, get_user_model, login
 from django.contrib.auth.mixins import LoginRequiredMixin
-from django.shortcuts import render, redirect
+from django.shortcuts import get_object_or_404, render, redirect
 from django.urls import reverse_lazy
 from django.views.generic import CreateView, DetailView, ListView
 from django.views.generic.base import View
 from rest_framework import generics, viewsets
 from TIS_app.permissions import IsOwnerOrReadOnly
 
-from TIS_app.forms import InventoryForm, RegisterForm
+from TIS_app.forms import InventoryForm, RegisterForm, TreeForm
 from TIS_app.models import (
     Circuit,
     Comment,
@@ -82,4 +82,16 @@ class CreateNewInventoryView(LoginRequiredMixin, CreateView):
 class DetailInventoryView(DetailView):
     model = Inventory
 
+
+class AddTreeToInventoryView(CreateView):
+    model = Tree
+    form_class = TreeForm
+    success_url = reverse_lazy('tree_add')
+    initial = {}
+
+    def get(self, request, *args, **kwargs):
+        inventory = get_object_or_404(Inventory, pk=kwargs['inventory_pk'])
+        self.initial['inventory'] = inventory
+
+        return super().get(request, *args, **kwargs)
 

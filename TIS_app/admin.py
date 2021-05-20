@@ -25,11 +25,6 @@ class PhotoAdmin(admin.ModelAdmin):
     pass
 
 
-# @admin.register(SocialApp)
-# class SocialAppAdmin(admin.ModelAdmin):
-#     pass
-
-
 @admin.register(Species)
 class SpeciesAdmin(admin.ModelAdmin):
     pass

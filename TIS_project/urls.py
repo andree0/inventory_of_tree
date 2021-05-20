@@ -33,6 +33,9 @@ urlpatterns = [
          name="all_inventory"),
     path('inventory/<int:pk>/detail/', v.DetailInventoryView.as_view(),
          name="inventory_detail"),
+    path('inventory/<int:inventory_pk>/tree/add/',
+         v.AddTreeToInventoryView.as_view(),
+         name="tree_add"),
     # path('accounts/', include('allauth.urls')),
 
     path('api-auth/',
@@ -42,6 +45,7 @@ urlpatterns = [
          name="api_inventory_all"),
     path('api/inventory/<int:pk>/detail/', v.DetailInventoryAPIView.as_view(),
          name="api_inventory_details"),
+
 ]
 
 if settings.DEBUG:

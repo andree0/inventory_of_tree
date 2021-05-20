@@ -56,7 +56,6 @@ class Tree(models.Model):
     roloff = models.PositiveIntegerField(
         choices=ROLOFF_CHOICES,
         default=ROLOFF_CHOICES[0])
-    hollow = models.BooleanField(default=False)
     inventory = models.ForeignKey(Inventory, on_delete=models.CASCADE)
 
     def __str__(self):
