@@ -13,6 +13,9 @@ class Species(models.Model):
     name = models.CharField(max_length=64)
     latin_name = models.CharField(max_length=64)
 
+    class Meta:
+        ordering = ['name']
+
     def __str__(self):
         return f"{self.name} / {self.latin_name}"
 
