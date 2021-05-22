@@ -8,7 +8,13 @@ from django.urls import reverse_lazy
 from django.views.generic import CreateView, DetailView, ListView
 from django.views.generic.base import View
 
-from TIS_app.forms import CircuitForm, InventoryForm, RegisterForm, TreeForm
+from TIS_app.forms import (
+    CircuitForm,
+    InventoryForm,
+    PhotoForm,
+    RegisterForm,
+    TreeForm,
+)
 from TIS_app.models import (
     Circuit,
     Comment,
@@ -95,7 +101,6 @@ class DetailInventoryView(DetailView):
 class AddTreeToInventoryView(LoginRequiredMixin, CreateView):
     model = Tree
     form_class = TreeForm
-    success_url = reverse_lazy('index')
     initial = {}
 
     def get(self, request, *args, **kwargs):
@@ -103,6 +108,10 @@ class AddTreeToInventoryView(LoginRequiredMixin, CreateView):
         self.initial['inventory'] = inventory
 
         return super().get(request, *args, **kwargs)
+
+    def post(self, request, *args, **kwargs):
+        self.extra_context['inventory_pk'] =
+        return render(self.request, self.template_name, self.extra_context)
 
 
 class AddCircuitTreeView(LoginRequiredMixin, CreateView):
@@ -112,6 +121,7 @@ class AddCircuitTreeView(LoginRequiredMixin, CreateView):
     initial = {}
 
     def get(self, request, *args, **kwargs):
+        self.extra_context['inventory_pk'] = kwargs['inventory_pk']
         tree = get_object_or_404(Tree, pk=kwargs['tree_pk'])
         self.initial['tree'] = tree
 
@@ -123,3 +133,22 @@ class YourInventoryView(LoginRequiredMixin, ListView):
 
     def get_queryset(self):
         return Inventory.objects.filter(author=self.request.user)
+
+
+class TreeDetailView(DetailView):
+    model = Tree
+
+
+class AddPhotoToTreeView(CreateView):
+    model = Photo
+    form_class = PhotoForm
+    initial = {}
+    extra_context = {}
+
+    def get(self, request, *args, **kwargs):
+        inventory = get_object_or_404(Inventory, pk=kwargs['inventory_pk'])
+        self.extra_context['inventory'] = inventory
+        tree = get_object_or_404(Tree, pk=kwargs['tree_pk'])
+        self.initial['tree'] = tree
+
+        return render(self.request, self.template_name, self.extra_context)

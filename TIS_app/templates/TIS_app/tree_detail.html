@@ -1,0 +1,14 @@
+{% extends 'TIS_app/base.html' %}
+
+{% block body %}
+    {% block submenu %}
+        <a href=""
+               class="btn btn-primary">Add Next Tree</a>
+    {% endblock %}
+<ul>
+    <li>Name: {{ tree.name }}</li>
+    <li>Location: {{ inventory.location }}</li>
+    <li>Author: {{ inventory.author.username }}</li>
+</ul>
+{% include 'TIS_app/tree_list.html' %}
+{% endblock %}

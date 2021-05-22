@@ -37,13 +37,15 @@ urlpatterns = [
     path('inventory/<int:inventory_pk>/tree/add/',
          v.AddTreeToInventoryView.as_view(),
          name="tree_add"),
-    path('inventory/<int:inventory_pk>/tree/<int:tree_pk>/',
+    path('inventory/<int:inventory_pk>/tree/<int:tree_pk>/circuit/',
          v.AddCircuitTreeView.as_view(),
          name="circuit_tree"),
     path('inventory/your/',
          v.YourInventoryView.as_view(),
-         name="circuit_tree"),
-
+         name="your_inventory"),
+    path('inventory/<int:inventory_pk>/tree/<int:tree_pk>/photo/',
+         v.AddPhotoToTreeView.as_view(),
+         name="photo_tree"),
 
 
     # path('accounts/', include('allauth.urls')),
