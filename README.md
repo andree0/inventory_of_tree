@@ -1,7 +1,15 @@
-# Tree Inventory System (TIS)
+<<<<<<< HEAD
+Tree Inventory System (TIS)
+---------------------
 
 **Technologies used:** Python 3.x, Django, Django Rest Framework, Web Scrapping, \
 PostgreSQL, OpenStreetMap, pytest, Bootstrap
+
+**Description app:** This is application for landscape architects \
+and dendrologist to inventory of green places.
+=======
+# Tree Inventory System (TIS)
+
 
 ### Aplikacja ta powinna umożliwiać:
 
@@ -23,3 +31,4 @@ PostgreSQL, OpenStreetMap, pytest, Bootstrap
 5. Etap "gospodarka drzewostanem": określenie zabiegów dla drzewa, przeznaczenie do wycinki lub pozostawienie
 6. W każdym etapie możliwość generowania i podpinania plików
 7. Zamknięcie inwentaryzacji
+>>>>>>> ac8a4269eda5b43e8596d1b831f7aa34dba3a2e0
