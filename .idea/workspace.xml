@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="f272d709-b9b2-494b-bc66-b0faf29e8331" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/TIS_project/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/TIS_project/TIS_app/__init__.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/TIS_project/TIS_app/admin.py" beforeDir="false" />
@@ -147,116 +146,7 @@
       <change beforePath="$PROJECT_DIR$/TIS_project/static/node_modules/jquery/src/traversing/findFilter.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/TIS_project/static/node_modules/jquery/src/wrap.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/filter_spacies.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/node_modules/jquery.geo/.jshintrc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/node_modules/jquery.geo/CONTRIBUTING.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/node_modules/jquery.geo/Gruntfile.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/node_modules/jquery.geo/LICENSE-MIT" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/node_modules/jquery.geo/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/node_modules/jquery.geo/js/excanvas.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/node_modules/jquery.geo/js/jquery-1.11.2.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/node_modules/jquery.geo/js/jquery-1.7.2.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/node_modules/jquery.geo/js/jquery.geo.core.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/node_modules/jquery.geo/js/jquery.geo.geographics.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/node_modules/jquery.geo/js/jquery.geo.geomap.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/node_modules/jquery.geo/js/jquery.geo.head.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/node_modules/jquery.geo/js/jquery.geo.shingled.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/node_modules/jquery.geo/js/jquery.geo.tiled.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/node_modules/jquery.geo/js/jquery.mousewheel.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/node_modules/jquery.geo/js/jquery.ui.widget.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/node_modules/jquery.geo/js/jsrender.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/node_modules/jquery.geo/libs/jquery-loader.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/node_modules/jquery.geo/libs/jquery/jquery.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/node_modules/jquery.geo/libs/qunit/qunit.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/node_modules/jquery.geo/libs/qunit/qunit.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/node_modules/jquery.geo/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/node_modules/jquery.geo/test/.jshintrc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/node_modules/jquery.geo/test/geo.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/node_modules/jquery.geo/test/geo_test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/node_modules/jquery.geo/test/qunit/basics.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/node_modules/jquery.geo/test/qunit/basics.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/node_modules/jquery.geo/test/qunit/find.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/node_modules/jquery.geo/test/qunit/find.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/node_modules/jquery.geo/test/qunit/qunit-1.18.0.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/node_modules/jquery.geo/test/test.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/node_modules/jquery.geo/test/test.xhtml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/node_modules/jquery/AUTHORS.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/node_modules/jquery/LICENSE.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/node_modules/jquery/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/node_modules/jquery/bower.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/node_modules/jquery/external/sizzle/LICENSE.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/node_modules/jquery/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/node_modules/jquery/src/ajax.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/node_modules/jquery/src/ajax/jsonp.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/node_modules/jquery/src/ajax/load.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/node_modules/jquery/src/ajax/script.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/node_modules/jquery/src/ajax/xhr.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/node_modules/jquery/src/attributes.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/node_modules/jquery/src/attributes/attr.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/node_modules/jquery/src/attributes/classes.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/node_modules/jquery/src/attributes/prop.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/node_modules/jquery/src/attributes/support.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/node_modules/jquery/src/attributes/val.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/node_modules/jquery/src/callbacks.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/node_modules/jquery/src/core.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/node_modules/jquery/src/core/DOMEval.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/node_modules/jquery/src/core/access.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/node_modules/jquery/src/core/camelCase.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/node_modules/jquery/src/core/init.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/node_modules/jquery/src/core/isAttached.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/node_modules/jquery/src/core/nodeName.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/node_modules/jquery/src/core/parseHTML.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/node_modules/jquery/src/core/parseXML.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/node_modules/jquery/src/core/ready-no-deferred.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/node_modules/jquery/src/core/ready.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/node_modules/jquery/src/core/readyException.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/node_modules/jquery/src/core/stripAndCollapse.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/node_modules/jquery/src/core/support.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/node_modules/jquery/src/core/toType.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/node_modules/jquery/src/css.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/node_modules/jquery/src/css/addGetHookIf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/node_modules/jquery/src/css/adjustCSS.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/node_modules/jquery/src/css/curCSS.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/node_modules/jquery/src/css/finalPropName.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/node_modules/jquery/src/css/hiddenVisibleSelectors.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/node_modules/jquery/src/css/showHide.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/node_modules/jquery/src/css/support.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/node_modules/jquery/src/data.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/node_modules/jquery/src/data/Data.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/node_modules/jquery/src/deferred.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/node_modules/jquery/src/deferred/exceptionHook.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/node_modules/jquery/src/deprecated.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/node_modules/jquery/src/deprecated/ajax-event-alias.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/node_modules/jquery/src/deprecated/event.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/node_modules/jquery/src/dimensions.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/node_modules/jquery/src/effects.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/node_modules/jquery/src/effects/Tween.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/node_modules/jquery/src/effects/animatedSelector.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/node_modules/jquery/src/event.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/node_modules/jquery/src/event/focusin.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/node_modules/jquery/src/event/support.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/node_modules/jquery/src/event/trigger.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/node_modules/jquery/src/exports/amd.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/node_modules/jquery/src/exports/global.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/node_modules/jquery/src/jquery.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/node_modules/jquery/src/manipulation.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/node_modules/jquery/src/manipulation/_evalUrl.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/node_modules/jquery/src/manipulation/buildFragment.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/node_modules/jquery/src/manipulation/getAll.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/node_modules/jquery/src/manipulation/setGlobalEval.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/node_modules/jquery/src/manipulation/support.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/node_modules/jquery/src/manipulation/wrapMap.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/node_modules/jquery/src/offset.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/node_modules/jquery/src/queue.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/node_modules/jquery/src/queue/delay.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/node_modules/jquery/src/selector-native.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/node_modules/jquery/src/selector-sizzle.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/node_modules/jquery/src/selector.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/node_modules/jquery/src/serialize.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/node_modules/jquery/src/traversing.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/node_modules/jquery/src/traversing/findFilter.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/node_modules/jquery/src/wrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/filter_spacies.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/filter_spacies.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -384,7 +274,7 @@
       <workItem from="1621508427261" duration="11800000" />
       <workItem from="1621589401300" duration="17336000" />
       <workItem from="1621679126504" duration="599000" />
-      <workItem from="1621680576936" duration="8957000" />
+      <workItem from="1621680576936" duration="9442000" />
     </task>
     <servers />
   </component>
