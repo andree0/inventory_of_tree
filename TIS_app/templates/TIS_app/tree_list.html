@@ -1,0 +1,8 @@
+    <h2>Lista spisanych drzew</h2>
+<ul>
+    {% for tree in tree_list %}
+        <li>{{ tree.identification_number }} / {{ tree.species }}</li>
+    {% empty %}
+        <p>No any trees.</p>
+    {% endfor %}
+</ul>

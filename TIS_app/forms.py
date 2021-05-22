@@ -3,7 +3,7 @@ from location_field.forms.plain import PlainLocationField
 from django import forms
 from django.contrib.auth import get_user_model
 
-from TIS_app.models import Inventory, Species, Tree
+from TIS_app.models import Circuit, Inventory, Species, Tree
 from TIS_app.validators import validate_password
 
 
@@ -81,3 +81,14 @@ class TreeForm(forms.ModelForm):
         widgets = {
             'inventory': forms.HiddenInput()
         }
+
+
+class CircuitForm(forms.ModelForm):
+
+    class Meta:
+        model = Circuit
+        fields = ('value', 'tree', )
+        widgets = {
+            'tree': forms.HiddenInput()
+        }
+

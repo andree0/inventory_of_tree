@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'TIS_app',
     'location_field.apps.DefaultConfig',
+    'formtools',
 ]
 
 REST_FRAMEWORK = {

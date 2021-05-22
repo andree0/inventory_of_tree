@@ -3,7 +3,8 @@
 {% block body %}
 <ul>
     {% for inventory in inventory_list %}
-        <li>{{ inventory.name }}</li>
+        <li><a href="{% url 'inventory_detail' inventory.pk %}">
+            {{ inventory.name }}</a></li>
     {% empty %}
         <p>No any inventories.</p>
     {% endfor %}

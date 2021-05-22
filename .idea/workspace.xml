@@ -1,90 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f272d709-b9b2-494b-bc66-b0faf29e8331" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+    <list default="true" id="03b0a643-500f-463b-841e-568b0ddd1a9c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inventory_of_tree.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inventory_of_tree.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TIS_app/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/TIS_app/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TIS_app/templates/TIS_app/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/TIS_app/templates/TIS_app/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TIS_app/templates/TIS_app/tree_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/TIS_app/templates/TIS_app/tree_form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TIS_app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/TIS_app/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TIS_project/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/TIS_project/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TIS_project/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/TIS_project/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
-    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="HTML File" />
-        <option value="JavaScript File" />
-        <option value="Python Script" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="1pTH5MtvUM40RhWftSaqJvr1EoH" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectId" id="1stybuULCFj2GIONvYWZtVXE2ZR" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
-    <property name="node.js.path.for.package.eslint" value="project" />
-    <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/TIS_app" />
-      <recent name="$PROJECT_DIR$/TIS_app/templates/registration" />
-      <recent name="$PROJECT_DIR$/TIS_app/templates/auth" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/TIS_project" />
-      <recent name="$PROJECT_DIR$/TIS_project/TIS_project" />
-      <recent name="$PROJECT_DIR$/TIS_app" />
-    </key>
-  </component>
-  <component name="RunManager" selected="Python.test_file">
-    <configuration name="test_file" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="$USER_HOME$/Virtualenv/inventory_of_tree/bin/python" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test_file.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager">
     <configuration name="inventory_of_tree" type="Python.DjangoServer" factoryName="Django server">
       <module name="inventory_of_tree" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -108,39 +59,16 @@
       <option name="customRunCommand" value="" />
       <method v="2" />
     </configuration>
-    <list>
-      <item itemvalue="Django Server.inventory_of_tree" />
-      <item itemvalue="Python.test_file" />
-    </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Python.test_file" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="f272d709-b9b2-494b-bc66-b0faf29e8331" name="Default Changelist" comment="" />
-      <created>1615199975894</created>
+      <changelist id="03b0a643-500f-463b-841e-568b0ddd1a9c" name="Default Changelist" comment="" />
+      <created>1621706255150</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1615199975894</updated>
-      <workItem from="1615199980432" duration="8873000" />
-      <workItem from="1615540053721" duration="47000" />
-      <workItem from="1615554122712" duration="253000" />
-      <workItem from="1615561620028" duration="64000" />
-      <workItem from="1619526110194" duration="1164000" />
-      <workItem from="1619596046054" duration="1854000" />
-      <workItem from="1621076481332" duration="2256000" />
-      <workItem from="1621242403222" duration="32968000" />
-      <workItem from="1621354537092" duration="19058000" />
-      <workItem from="1621508427261" duration="11800000" />
-      <workItem from="1621589401300" duration="17336000" />
-      <workItem from="1621679126504" duration="599000" />
-      <workItem from="1621680576936" duration="9522000" />
-      <workItem from="1621703293852" duration="1899000" />
-      <workItem from="1621705196295" duration="1091000" />
+      <updated>1621706255150</updated>
+      <workItem from="1621706256830" duration="7164000" />
     </task>
     <servers />
   </component>
@@ -157,9 +85,5 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/inventory_of_tree$test_file.coverage" NAME="test_file Coverage Results" MODIFIED="1621704358791" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

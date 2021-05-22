@@ -1,13 +1,14 @@
+from formtools.wizard.views import SessionWizardView
+from rest_framework import generics, viewsets
+
 from django.contrib.auth import authenticate, get_user_model, login
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.shortcuts import get_object_or_404, render, redirect
 from django.urls import reverse_lazy
 from django.views.generic import CreateView, DetailView, ListView
 from django.views.generic.base import View
-from rest_framework import generics, viewsets
-from TIS_app.permissions import IsOwnerOrReadOnly
 
-from TIS_app.forms import InventoryForm, RegisterForm, TreeForm
+from TIS_app.forms import CircuitForm, InventoryForm, RegisterForm, TreeForm
 from TIS_app.models import (
     Circuit,
     Comment,
@@ -17,6 +18,7 @@ from TIS_app.models import (
     Tree,
     User,
 )
+from TIS_app.permissions import IsOwnerOrReadOnly
 from TIS_app.serializers import (
     InventorySerializer,
     UserSerializer,
@@ -42,7 +44,7 @@ class DetailInventoryAPIView(generics.RetrieveUpdateDestroyAPIView):
     permission_classes = [IsOwnerOrReadOnly]
 
 
-# App views ---------------------------------------------
+# Application views ---------------------------------------------
 
 class IndexView(View):
     template_name = 'TIS_app/base.html'
@@ -81,12 +83,19 @@ class CreateNewInventoryView(LoginRequiredMixin, CreateView):
 
 class DetailInventoryView(DetailView):
     model = Inventory
+    extra_context = {}
+
+    def get(self, request, *args, **kwargs):
+        inventory = get_object_or_404(Inventory, pk=kwargs['pk'])
+        self.extra_context['tree_list'] = Tree.objects.filter(
+            inventory=inventory)
+        return super().get(request, *args, **kwargs)
 
 
-class AddTreeToInventoryView(CreateView):
+class AddTreeToInventoryView(LoginRequiredMixin, CreateView):
     model = Tree
     form_class = TreeForm
-    success_url = reverse_lazy('tree_add')
+    success_url = reverse_lazy('index')
     initial = {}
 
     def get(self, request, *args, **kwargs):
@@ -95,3 +104,22 @@ class AddTreeToInventoryView(CreateView):
 
         return super().get(request, *args, **kwargs)
 
+
+class AddCircuitTreeView(LoginRequiredMixin, CreateView):
+    model = Circuit
+    form_class = CircuitForm
+    success_url = reverse_lazy('index')
+    initial = {}
+
+    def get(self, request, *args, **kwargs):
+        tree = get_object_or_404(Tree, pk=kwargs['tree_pk'])
+        self.initial['tree'] = tree
+
+        return super().get(request, *args, **kwargs)
+
+
+class YourInventoryView(LoginRequiredMixin, ListView):
+    model = Inventory
+
+    def get_queryset(self):
+        return Inventory.objects.filter(author=self.request.user)

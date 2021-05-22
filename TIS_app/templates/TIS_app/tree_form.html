@@ -3,6 +3,7 @@
 {% block body %}
     <form action="" method="POST">{% csrf_token %}
         {{ form }}
+        {{ form_circuit }}
     <input type="submit" value="Add Next Tree" id="button">
     </form>
 {% endblock %}
