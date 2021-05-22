@@ -128,4 +128,4 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
-TIS_project/local_settings.py
+.local_settings.py
