@@ -1,0 +1,12 @@
+{% extends 'TIS_app/base.html' %}
+
+{% block body %}
+<ul>
+    {% for inventory in inventory_list %}
+        <li>{{ inventory.name }}</li>
+    {% empty %}
+        <p>No any inventories.</p>
+    {% endfor %}
+</ul>
+
+{% endblock %}

@@ -1,0 +1,10 @@
+{% extends 'TIS_app/base.html' %}
+
+{% block body %}
+<ul>
+    <li>Name: {{ inventory.name }}</li>
+    <li>Location: {{ inventory.location }}</li>
+    <li>Author: {{ inventory.author.username }}</li>
+</ul>
+
+{% endblock %}
