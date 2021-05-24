@@ -110,22 +110,33 @@ class AddTreeToInventoryView(LoginRequiredMixin, CreateView):
         return super().get(request, *args, **kwargs)
 
     def post(self, request, *args, **kwargs):
-        self.extra_context['inventory_pk'] =
-        return render(self.request, self.template_name, self.extra_context)
+        form = self.form_class(request.POST)
+        if form.is_valid():
+            tree = Tree.objects.create(**form.cleaned_data)
+            return redirect('circuit_tree', tree_pk=tree.pk)
+        else:
+            return self.form_invalid(form)
 
 
 class AddCircuitTreeView(LoginRequiredMixin, CreateView):
     model = Circuit
     form_class = CircuitForm
-    success_url = reverse_lazy('index')
+    success_url = reverse_lazy('photo_tree')
     initial = {}
 
     def get(self, request, *args, **kwargs):
-        self.extra_context['inventory_pk'] = kwargs['inventory_pk']
         tree = get_object_or_404(Tree, pk=kwargs['tree_pk'])
         self.initial['tree'] = tree
 
         return super().get(request, *args, **kwargs)
+
+    def post(self, request, *args, **kwargs):
+        form = self.form_class(request.POST)
+        if form.is_valid():
+            tree = Tree.objects.create(**form.cleaned_data)
+            return redirect('photo_tree', tree_pk=tree.pk)
+        else:
+            return self.form_invalid(form)
 
 
 class YourInventoryView(LoginRequiredMixin, ListView):

@@ -2,20 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="03b0a643-500f-463b-841e-568b0ddd1a9c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inventory_of_tree.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inventory_of_tree.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TIS_app/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/TIS_app/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TIS_app/templates/TIS_app/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/TIS_app/templates/TIS_app/base.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TIS_app/templates/TIS_app/tree_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/TIS_app/templates/TIS_app/tree_form.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TIS_app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/TIS_app/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TIS_project/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/TIS_project/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TIS_project/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/TIS_project/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -26,10 +28,12 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$USER_HOME$/asyncio" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -68,7 +72,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1621706255150</updated>
-      <workItem from="1621706256830" duration="7164000" />
+      <workItem from="1621706256830" duration="14377000" />
+      <workItem from="1621857739599" duration="4604000" />
     </task>
     <servers />
   </component>
@@ -85,5 +90,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
